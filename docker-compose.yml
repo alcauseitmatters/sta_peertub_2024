@@ -71,7 +71,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./peertube_v1/db:/var/lib/postgresql/data
+      - ./peertube_v1/db/data:/var/lib/postgresql/data
     restart: "always"
     networks:
       - peertube_kos1_net
